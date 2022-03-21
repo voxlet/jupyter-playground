@@ -1,0 +1,17 @@
+{
+  "name": "jupyter-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "poetry run tslab install --sys-prefix --binary ${PWD}/node_modules/.bin/tslab"
+  },
+  "dependencies": {
+    "tslab": "^1.0.15",
+    "undici": "^4.16.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
